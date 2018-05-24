@@ -1,10 +1,10 @@
 
 import ProjectManager
 
-engine = ProjectManager.ProjectManaer()
+engine = ProjectManager.ProjectManager()
 engine.reset()  # Prepare the engine for the execution.
 engine.run()  # Run it!
 FactList = engine.FactsMap
-for k, v in FactList.items():
+for v in FactList:
     v.printFactContainer()
 
